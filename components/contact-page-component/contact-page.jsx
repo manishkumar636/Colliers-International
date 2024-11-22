@@ -13,6 +13,7 @@ import {
   AccordionPanel,
   AccordionIcon,
   Box,
+  Checkbox,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { animationVariants } from "../../constants/animationVariants";
@@ -312,6 +313,14 @@ const ContactPage = () => {
             value={formData.message}
             onChange={handleChange}
           />
+          <label>
+            <Checkbox name="agreement" required>
+              I agree and authorise to call/send SMS/Promotional/Informational
+              messages/notifications. This will override the registry with
+              DNC/NDNC.
+            </Checkbox>
+          </label>
+
           <Button
             _hover={{ backgroundColor: "white", color: "#d5515e" }}
             backgroundColor={"#d5515e"}

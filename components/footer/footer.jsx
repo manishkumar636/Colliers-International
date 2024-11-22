@@ -1,4 +1,4 @@
-import { Button, Input, Textarea, useToast } from "@chakra-ui/react";
+import { Button, Checkbox, Input, Textarea, useToast } from "@chakra-ui/react";
 import React, { useState } from "react";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import axios from "axios";
@@ -276,6 +276,17 @@ const Footer = () => {
             onChange={handleChange}
             autoComplete="off"
           />
+
+          <label>
+            <Checkbox name="agreement" required>
+              <span className="text-white text-sm">
+                I agree and authorise to call/send SMS/Promotional/Informational
+                messages/notifications. This will override the registry with
+                DNC/NDNC.
+              </span>
+            </Checkbox>
+          </label>
+
           <Button
             _hover={{ backgroundColor: "white", color: "#d5515e" }}
             backgroundColor={"#d5515e"}
