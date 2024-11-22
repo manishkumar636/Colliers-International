@@ -436,7 +436,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
             Our Services
           </Link>
           <div className="relative">
-            <div
+            {/* <div
               onClick={() => {
                 setShowcaseDropDown(!showcaseDropDown);
               }}
@@ -448,8 +448,8 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                   showcaseDropDown ? "-rotate-180" : "rotate-0"
                 } transition-all `}
               />
-            </div>
-            <ul
+            </div> */}
+            {/* <ul
               className={`flex flex-col gap-2 mt-3 pl-5 transition-all duration-300 origin-top  `}
             >
               <Link
@@ -472,10 +472,10 @@ const NavBar = ({ navBar2, showCase1Page }) => {
               >
                 Show Cases 2
               </Link>
-            </ul>
+            </ul> */}
             <div
               className={`${
-                showcaseDropDown ? "top-[114px]" : "top-[41px]"
+                showcaseDropDown ? "top-[114px]" : "top-[1px]"
               } transition-all duration-200 absolute  w-full bg-white h-24`}
             >
               <Link
