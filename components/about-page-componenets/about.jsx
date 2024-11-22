@@ -14,7 +14,7 @@ import "./about.css";
 const AboutPage = () => {
   return (
     <>
-      <div className="bg-[url(/services-page-images/service-hero-bg.jpg)] bg-fixed bg-center bg-cover pt-44 pb-36 max-md:pt-36 max-md:pb-24 ">
+      <div className="bg-[url(/services-page-images/services-main.jpg)] bg-fixed bg-center bg-cover pt-44 pb-36 max-md:pt-36 max-md:pb-24 ">
         <motion.div
           initial="initial"
           whileInView="animate"
@@ -81,8 +81,9 @@ const AboutPage = () => {
                 Get an instant free valuation
               </h2>
               <p className="text-xl mt-2">
-                Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
-                urna in elit amet.
+                Curious about your property’s value? Get an instant, no-cost
+                valuation today. Simply provide your details, and receive an
+                accurate estimate in minutes—no strings attached!
               </p>
             </div>
             <div>
@@ -90,8 +91,9 @@ const AboutPage = () => {
                 Get your property ready
               </h2>
               <p className="text-xl mt-2">
-                Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
-                urna in elit amet.
+                Preparing to sell or lease? Let us help you get your property in
+                top shape. Our expert tips and guidance will ensure it is
+                market-ready and maximizes its value.
               </p>
             </div>
             <div>
@@ -99,8 +101,9 @@ const AboutPage = () => {
                 Offer acceptance
               </h2>
               <p className="text-xl mt-2">
-                Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
-                urna in elit amet.
+                Ready to move forward? Accept our offer and take the next step
+                in your real estate journey. We make the process smooth,
+                ensuring you get the best deal with ease.
               </p>
             </div>
           </div>
@@ -176,7 +179,7 @@ const AboutPage = () => {
               </h1>
             </div>
           </motion.div>
-          <div className="we-focus-cards grid grid-cols-3 max-md:grid-cols-1 grid-rows-1 max-md:grid-rows-3 gap-6 mt-10">
+          {/* <div className="we-focus-cards grid grid-cols-3 max-md:grid-cols-1 grid-rows-1 max-md:grid-rows-3 gap-6 mt-10">
             <motion.div
               initial="initial"
               whileInView="animate"
@@ -225,7 +228,7 @@ const AboutPage = () => {
                 urna in elit amet.
               </p>
             </motion.div>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* we focus section start */}
@@ -250,7 +253,6 @@ const AboutPage = () => {
             </h1>
             <div className="flex flex-col gap-5 mt-7">
               <div className="flex justify-between items-center border-b-2 border-black/30 pb-5 text-2xl">
-                <h2>Investmennt Management</h2>
                 <Link
                   to={"/services"}
                   onClick={scrollToTop}
@@ -260,7 +262,6 @@ const AboutPage = () => {
                 </Link>
               </div>
               <div className="flex justify-between items-center border-b-2 border-black/30 pb-5 text-2xl">
-                <h2>Investmennt Management</h2>
                 <Link
                   to={"/services"}
                   onClick={scrollToTop}
@@ -270,7 +271,6 @@ const AboutPage = () => {
                 </Link>
               </div>
               <div className="flex justify-between items-center border-b-2 border-black/30 pb-5 text-2xl">
-                <h2>Investmennt Management</h2>
                 <Link
                   to={"/services"}
                   onClick={scrollToTop}
@@ -280,7 +280,6 @@ const AboutPage = () => {
                 </Link>
               </div>
               <div className="flex justify-between items-center border-b-2 border-black/30 pb-5 text-2xl">
-                <h2>Investmennt Management</h2>
                 <Link
                   to={"/services"}
                   onClick={scrollToTop}
@@ -441,7 +440,7 @@ const AboutPage = () => {
             className="w-2/4 max-md:w-full max-md:text-center flex flex-col gap-8"
           >
             <h1 className="text-5xl max-md:text-4xl font-semibold">
-              Why do people love homyz
+              Why do people love Colliers International
             </h1>
             <div>
               <Carousel />

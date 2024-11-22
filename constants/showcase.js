@@ -1,7 +1,7 @@
 export const showCase = [
   {
     id: 1,
-    city: "Karachi",
+    city: "Delhi",
     shortDescription:
       "Karachi 'The City of Lights', the vibrant metropolis on the shores of the Arabian Sea, is a melting pot of diverse cultures, bustling with energy.",
     description:
@@ -18,7 +18,7 @@ export const showCase = [
   },
   {
     id: 2,
-    city: "Islamabad",
+    city: "Noida",
     shortDescription:
       "Islamabad, the serene capital of Pakistan, is nestled among picturesque hills, renowned for its well-planned infrastructure and green spaces.",
     description:
@@ -35,7 +35,7 @@ export const showCase = [
   },
   {
     id: 3,
-    city: "Lahore",
+    city: "Chattisgarh",
     shortDescription:
       "Lahore, the cultural heart of Pakistan, captivates visitors with its grand Mughal architecture, making it a city that embraces history, art, and a vibrant zest for life.",
     description:
@@ -52,7 +52,7 @@ export const showCase = [
   },
   {
     id: 4,
-    city: "Quetta",
+    city: "Pune",
     shortDescription:
       "Quetta, the captivating city nestled in the rugged mountains of Balochistan, enchants with its breathtaking natural beauty and landscapes.",
     description:
@@ -69,11 +69,11 @@ export const showCase = [
   },
   {
     id: 5,
-    city: "Peshawar",
+    city: "Raipur",
     shortDescription:
-      "Peshawar, the historic city in Khyber Pakhtunkhwa province, carries a rich cultural heritage with its bustling markets, ancient landmarks.",
+      "Raipur, the historic city in Khyber Pakhtunkhwa province, carries a rich cultural heritage with its bustling markets, ancient landmarks.",
     description:
-      "Peshawar: Peshawar is a city located in the Khyber Pakhtunkhwa province of Pakistan, close to the country's western border with Afghanistan. It is one of the oldest continuously inhabited cities in the world and has a unique blend of cultures and traditions. Peshawar is known for its bustling bazaars, where one can find traditional handicrafts, spices, and vibrant street food. The city is also a gateway to the scenic beauty of the Khyber Pass and the nearby tribal areas.",
+      "Raipur: Raipur is a city located in the Khyber Pakhtunkhwa province of Pakistan, close to the country's western border with Afghanistan. It is one of the oldest continuously inhabited cities in the world and has a unique blend of cultures and traditions. Raipur is known for its bustling bazaars, where one can find traditional handicrafts, spices, and vibrant street food. The city is also a gateway to the scenic beauty of the Khyber Pass and the nearby tribal areas.",
     coverImage: "/Project-showcase/Peshawar/Baab-e-khyber.jpg",
     moreImages: [
       "/Project-showcase/Peshawar/Islamia-college.jpg",

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import {
   Accordion,
   AccordionItem,
@@ -53,7 +54,7 @@ const ServicePage = ({ id, title, breif, descr, imageSrc }) => {
           <h1 className="text-[46px] leading-none max-md:text-4xl font-semibold">
             Tuning in to what really matters
           </h1>
-          <div className="text-xl flex flex-col gap-3">
+          <div className="text-xl flex flex-col gap-3 text-justify">
             <p>
               We believe that technology and human-centered design are
               revolutionizing brand experiences. Remarkable innovations are
@@ -203,19 +204,19 @@ const ServicePage = ({ id, title, breif, descr, imageSrc }) => {
             <div>
               <FaEnvelope className="text-red-500" />
             </div>
-            <p>Office # 420 DHA Phase 90, Karachi, PK</p>
+            <p>Office 420 Sector 15, Delhi, INDIA</p>
           </div>
           <div className="flex  gap-3 text-xl items-center">
             <div>
               <FaPhone className="rotate-90 text-red-500" />
             </div>
-            <p>+92 39283848238</p>
+            <p>+91 868525674</p>
           </div>
           <div className="flex  gap-3 text-xl items-center">
             <div>
               <FaMapMarkerAlt className="text-red-500" />
             </div>
-            <p>information@office.com</p>
+            <p>information@colliers.com</p>
           </div>
           <Link
             to="/contact"

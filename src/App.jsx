@@ -14,16 +14,17 @@ import Featured from "../components/featured-&-popluar-page-component/featrued";
 import Popular from "../components/featured-&-popluar-page-component/popluar";
 import Contact from "./contact";
 import Results from "./results";
+import { Fragment } from "react";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
-      <>
+      <Fragment>
         <NavBar />
         <HomePage />
         <Footer />
-      </>
+      </Fragment>
     ),
   },
   {

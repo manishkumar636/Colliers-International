@@ -136,15 +136,18 @@ const Footer = () => {
         <div className="flex flex-col items-start h-auto justify-between gap-16 w-2/4 max-lg:w-full pr-10 max-sm:pr-0">
           <div className="flex flex-col text-lg items-start  justify-between gap-10 ">
             <a href="/">
-              <img src="/Homyz-logo.png" className="w-36" alt="Homyz-logo" />
+              <img src="/colliers.jpg" className="w-28" alt="Homyz-logo" />
             </a>
             <p style={{ color: "#696969" }}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam,
-              pariatur. Fugit dignissimos aut tempora ullam similique minima
-              culpa quod fuga, doloribus expedita, cupiditate sint, nulla
-              distinctio soluta. Aut, sequi quia.
+              Founded in 2010, Colliers is a leading real estate company
+              committed to delivering exceptional service and innovative
+              solutions. With a focus on quality, reliability, and client
+              satisfaction, we have built a reputation for excellence in the
+              industry. Whether you’re buying, selling, leasing, or investing,
+              Colliers is your trusted partner in navigating the real estate
+              market.
             </p>
-            <div className="flex text-xl justify-start items-center gap-10 text-red-500">
+            {/* <div className="flex text-xl justify-start items-center gap-10 text-red-500">
               <Link target="_blank" to={"https://facebook.com"}>
                 <FaFacebookF />
               </Link>
@@ -154,7 +157,7 @@ const Footer = () => {
               <Link target="_blank" to={"https://twitter.com"}>
                 <FaTwitter />
               </Link>
-            </div>
+            </div> */}
             <ul className="text-white text-lg flex justify-start items-center flex-wrap gap-x-8 gap-y-4">
               <Link
                 onClick={scrollToTop}
@@ -186,7 +189,9 @@ const Footer = () => {
               </Link>
             </ul>
           </div>
-          <p style={{ color: "#696969" }}>© Homyz. All Rights Reserved 2023.</p>
+          <p style={{ color: "#696969" }}>
+            © Colliers. All Rights Reserved 2023.
+          </p>
         </div>
 
         <div

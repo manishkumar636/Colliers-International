@@ -144,7 +144,7 @@ const ContactPage = () => {
 
   return (
     <div className=" w-full overflow-hidden">
-      <div className="  flex bg-[url('/hero-bg-image.jpg')] pt-44 max-sm:pt-40 pb-32 bg-top bg-no-repeat bg-cover  ">
+      <div className="  flex bg-[url('/bg-home-here.jpg')] pt-44 max-sm:pt-40 pb-32 bg-top bg-no-repeat bg-cover  ">
         <div
           style={{ maxWidth: 1200 }}
           className="mx-auto w-full text-white px-10 max-sm:px-5 flex flex-col max-lg:items-center max-lg:text-center gap-16"
@@ -154,7 +154,7 @@ const ContactPage = () => {
             whileInView="animate"
             variants={animationVariants.zoomOut}
             viewport={{ once: true, amount: 0.2 }}
-            className="text-6xl max-lg:mx-auto font-semibold max-sm:text-5xl max-w-lg "
+            className="text-6xl max-lg:mx-auto font-semibold max-sm:text-5xl max-w-lg text-black "
           >
             Contact Us
           </motion.h1>
@@ -175,7 +175,10 @@ const ContactPage = () => {
                 </div>
                 <h2 className="title-font font-semibold ">Services</h2>
               </div>
-              <p>Neque porro quisquam est, qui dolorem ipsum.</p>
+              <p>
+                Explore our range of real estate services. Reach out to learn
+                how we can assist you in achieving your goals.
+              </p>
             </motion.div>
             <motion.div
               variants={animationVariants.fadeUp}
@@ -187,7 +190,10 @@ const ContactPage = () => {
                 </div>
                 <h2 className="title-font font-semibold ">Pricing</h2>
               </div>
-              <p>Neque porro quisquam est, qui dolorem ipsum.</p>
+              <p>
+                Looking for pricing details? Contact us for clear and
+                competitive pricing tailored to your needs.
+              </p>
             </motion.div>
             <motion.div
               variants={animationVariants.fadeUp}
@@ -199,7 +205,10 @@ const ContactPage = () => {
                 </div>
                 <h2 className="title-font font-semibold ">Support</h2>
               </div>
-              <p>Neque porro quisquam est, qui dolorem ipsum.</p>
+              <p>
+                Need help? Contact our support team for quick assistance. We are
+                here to help!
+              </p>
             </motion.div>
           </motion.div>
         </div>
@@ -338,28 +347,29 @@ const ContactPage = () => {
             </h1>
           </div>
           <p className="text-xl">
-            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-            impedit quo minus id quod maxime placeat facere possimus, omnis
-            voluptas assumenda est, omnis dolor repellendus.
+            Need assistance or have questions? Our dedicated support team is
+            here to help! Reach out to us, and we will provide the guidance and
+            answers you need. Whether its about our services, properties, or any
+            other inquiries, we are just a message or call away.
           </p>
           <div className="flex flex-col gap-3">
             <div className="flex  gap-3 text-xl items-center">
               <div>
                 <FaEnvelope className="text-red-500" />
               </div>
-              <p>Office # 420 DHA Phase 90, Karachi, PK</p>
+              <p>Office 420 Sector 15, Delhi, INDIA</p>
             </div>
             <div className="flex  gap-3 text-xl items-center">
               <div>
                 <FaPhone className="rotate-90 text-red-500" />
               </div>
-              <p>+92 39283848238</p>
+              <p>+91 868525674</p>
             </div>
             <div className="flex  gap-3 text-xl items-center">
               <div>
                 <FaMapMarkerAlt className="text-red-500" />
               </div>
-              <p>information@office.com</p>
+              <p>information@colliers.com</p>
             </div>
           </div>
         </motion.div>
@@ -451,10 +461,11 @@ const ContactPage = () => {
             <h2 className="text-5xl max-md:text-4xl font-bold title-font">
               What we do
             </h2>
-            <p className="text-xl">
-              Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
-              urna in elit amet blandit enim lacinia. Tellus leo felis et vel
-              eget maecenas.
+            <p className="text-xl text-left">
+              We specialize in delivering exceptional real estate solutions
+              tailored to your needs. From developing premium properties to
+              providing expert guidance in buying, selling, leasing, or
+              investing.
             </p>
             <Link to="/about" onClick={scrollToTop}>
               <button
@@ -488,7 +499,7 @@ const ContactPage = () => {
                 iconAlt={"reliability"}
                 title={"Reliability"}
                 desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
+                  "At Colliers, reliability is at the core of everything we do. With decades of experience in the real estate industry."
                 }
               />
               <WhatWeDoCard
@@ -496,7 +507,7 @@ const ContactPage = () => {
                 iconAlt={"communication"}
                 title={"communication"}
                 desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
+                  "Effective communication is the foundation of our success at Colliers. We prioritize clear, transparent."
                 }
               />
             </div>
@@ -510,7 +521,7 @@ const ContactPage = () => {
                 iconAlt={"quality-first"}
                 title={"Quality First"}
                 desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
+                  "At Colliers, quality is our top priority. We are committed to delivering real estate solutions that not only meet but exceed industry standards."
                 }
               />
               <div

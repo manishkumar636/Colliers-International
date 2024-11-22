@@ -36,12 +36,12 @@ const HomePage = () => {
     if (searchInp.value && searchInp.value.trim()) {
       navigate(`/search?query=${searchInp.value}`);
     } else {
-      errorToast("Fill the first first!", "error");
+      errorToast("Fill the content first!", "error");
     }
   };
   return (
     <div className=" w-full overflow-hidden">
-      <div className="  flex bg-[url('/hero-bg-image.jpg')] pt-36 pb-20 bg-top bg-no-repeat bg-cover  ">
+      <div className="  flex bg-[url('/bg-home-here.jpg')] pt-36 pb-20 bg-top bg-no-repeat bg-cover  ">
         <motion.div
           initial="initial"
           whileInView="animate"
@@ -52,13 +52,13 @@ const HomePage = () => {
         >
           <motion.h1
             variants={animationVariants.fadeLeft}
-            className="text-6xl max-lg:mx-auto font-semibold max-sm:text-4xl max-w-lg "
+            className="text-6xl max-lg:mx-auto font-semibold max-sm:text-4xl max-w-lg text-black "
           >
             Discover Most Suitable Property
           </motion.h1>
           <motion.p
             variants={animationVariants.fadeLeft}
-            className="text-xl max-lg:mx-auto max-w-md  "
+            className="text-xl max-lg:mx-auto max-w-md  text-black"
           >
             Our mission is to engage in issues that are of concern to
             individuals
@@ -68,7 +68,7 @@ const HomePage = () => {
             id="search-inp"
             className="max-w-xl max-lg:mx-auto max-lg:w-full relative"
           >
-            <FaPeriscope className="text-red-500 text-2xl absolute left-2 top-5 " />
+            <FaPeriscope className="text-red-700 text-2xl absolute left-2 top-5 " />
             <input
               placeholder="Search..."
               onKeyDown={(e) => {
@@ -95,16 +95,16 @@ const HomePage = () => {
             className="flex max-lg:flex-col max-lg:items-center gap-10 w-full justify-between items-end mt-4"
           >
             <div className="flex gap-12">
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4 text-black">
                 <h2 className="text-4xl title-font font-bold">19K+</h2>
                 <p className="text-lg">Premium houses</p>
               </div>
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4 text-black">
                 <h2 className="text-4xl title-font font-bold">5000+</h2>
                 <p className="text-lg">Premium houses</p>
               </div>
             </div>
-            <div className="flex gap-12 max-sm:flex-wrap  justify-center">
+            {/* <div className="flex gap-12 max-sm:flex-wrap  justify-center">
               <div className="flex justify-start items-center gap-2">
                 <img className="w-9" src="/grafton.png" alt="img" />
                 <h2 className="text-2xl">Grafton</h2>
@@ -117,7 +117,7 @@ const HomePage = () => {
                 <img className="w-9" src="/tundratown.png" alt="img" />
                 <h2 className="text-2xl">Tundratown</h2>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </motion.div>
 
@@ -138,7 +138,7 @@ const HomePage = () => {
             >
               <h2 className="text-5xl max-md:text-4xl font-bold title-font">
                 We build quality real estate projects
-                <span className=" text-red-500 title-font "> since 1998</span>
+                <span className=" text-red-500 title-font "> since 2010</span>
               </h2>
             </motion.div>
           </div>
@@ -149,11 +149,10 @@ const HomePage = () => {
               variants={animationVariants.fadeRight}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <p className="text-xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                itaque nesciunt similique dolore illum eaque repellat eligendi
-                nemo odit fugit in, impedit ad excepturi architecto dolores
-                quaerat accusantium! Sapiente, repellendus!
+              <p className="text-lg">
+                We create exceptional real estate projects that stand the test
+                of time. With a focus on quality, innovation, and attention to
+                detail, we deliver spaces that inspire and elevate lifestyles.
               </p>
               <Link onClick={scrollToTop} to={"/about"}>
                 <Button
@@ -184,9 +183,10 @@ const HomePage = () => {
               What we do
             </h2>
             <p className="text-xl">
-              Lorem ipsum dolor sit amet consectetur. Malesuada vehicula netus
-              urna in elit amet blandit enim lacinia. Tellus leo felis et vel
-              eget maecenas.
+              We specialize in delivering exceptional real estate solutions
+              tailored to your needs. From developing premium properties to
+              providing expert guidance in buying, selling, leasing, or
+              investing.
             </p>
             <Link onClick={scrollToTop} to={"/about"}>
               <button
@@ -211,7 +211,7 @@ const HomePage = () => {
                 iconAlt={"reliability"}
                 title={"Reliability"}
                 desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
+                  "At Colliers, reliability is at the core of everything we do. With decades of experience in the real estate industry."
                 }
               />
               <WhatWeDoCard
@@ -219,7 +219,7 @@ const HomePage = () => {
                 iconAlt={"communication"}
                 title={"communication"}
                 desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
+                  "Effective communication is the foundation of our success at Colliers. We prioritize clear, transparent."
                 }
               />
             </div>
@@ -233,7 +233,7 @@ const HomePage = () => {
                 iconAlt={"quality-first"}
                 title={"Quality First"}
                 desc={
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam distinctio, nemo libero deleniti quibusdam quia!"
+                  "At Colliers, quality is our top priority. We are committed to delivering real estate solutions that not only meet but exceed industry standards."
                 }
               />
               <div
@@ -500,7 +500,7 @@ const HomePage = () => {
             className="w-2/4 max-md:w-full max-md:text-center flex flex-col gap-8"
           >
             <h1 className="text-5xl max-md:text-4xl font-semibold">
-              Why do people love homyz
+              Why do people love Colliers
             </h1>
             <div>
               <Carousel />

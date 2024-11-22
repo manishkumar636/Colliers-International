@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { FaAngleDown, FaBars, FaShoppingCart } from "react-icons/fa";
 import "./navbar.css";
 import Button from "../buttons-component/solidbutton";
@@ -13,6 +14,7 @@ import {
 } from "@chakra-ui/react";
 import { formatCompactNumber } from "../../constants/formatNumber";
 import { scrollToTop } from "../../constants/scrollToTop";
+
 const NavBar = ({ navBar2, showCase1Page }) => {
   const [totalQty, setTotalQty] = useState(0);
   const [subTotal, setSubTotal] = useState(0);
@@ -20,7 +22,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
   const { cartItems, setCartItems, addToCart, modal, setModal } =
     useContext(CartContext);
   const [whenScroll, setWhenScroll] = useState("bg-transparent");
-  const [logo, setlogo] = useState("/Homyz-logo.png");
+  const [logo, setlogo] = useState("/colliers.jpg");
   const [textColor, setTextColor] = useState("text-white");
   const [showcaseDropDown, setShowcaseDropDown] = useState(false);
   const [viewSideNav, setViewSideNav] = useState(false);
@@ -33,12 +35,12 @@ const NavBar = ({ navBar2, showCase1Page }) => {
     const changeColor = () => {
       if (window.scrollY >= 90) {
         setWhenScroll("bg-white");
-        setlogo("/Homyz-logo2.png");
+        setlogo("/colliers.jpg");
         setTextColor("text-black");
       } else {
         setWhenScroll("transparent");
         setTextColor("text-white");
-        setlogo("/Homyz-logo.png");
+        setlogo("/colliers.jpg");
       }
     };
     window.addEventListener("scroll", changeColor);
@@ -238,9 +240,9 @@ const NavBar = ({ navBar2, showCase1Page }) => {
         >
           <Link onClick={scrollToTop} to="/">
             <img
-              src={navBar2 ? "/Homyz-logo2.png" : logo}
-              className="w-44 max-lg:w-36"
-              alt="Homyz-logo"
+              src={navBar2 ? "/colliers.jpg" : logo}
+              className="w-28 max-lg:w-36"
+              alt="Colliers"
             />
           </Link>
           <ul
@@ -254,19 +256,19 @@ const NavBar = ({ navBar2, showCase1Page }) => {
           >
             <Link
               onClick={scrollToTop}
-              className="hover:text-red-500 transition-all"
+              className="hover:text-red-500 transition-all text-black font-semibold"
               to="/"
             >
               Home
             </Link>
             <Link
               onClick={scrollToTop}
-              className="hover:text-red-500 transition-all"
+              className="hover:text-red-500 transition-all text-black font-semibold"
               to="/Services"
             >
               Our Services
             </Link>
-            <div className="showcase-menu cursor-pointer hover:text-red-500 transition-all relative">
+            {/* <div className="showcase-menu cursor-pointer hover:text-red-500 transition-all relative">
               Show Cases
               <div className="showcase-list hidden absolute cursor-default -left-4 ">
                 <ul
@@ -301,10 +303,10 @@ const NavBar = ({ navBar2, showCase1Page }) => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
             <Link
               onClick={scrollToTop}
-              className="hover:text-red-500 transition-all"
+              className="hover:text-red-500 transition-all text-black font-semibold"
               to="/about"
             >
               About
@@ -327,7 +329,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
               ) : (
                 ""
               )}
-              <FaShoppingCart />
+              <FaShoppingCart className="text-black" />
             </div>
 
             <Link onClick={scrollToTop} to="/contact">
@@ -374,7 +376,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
         </nav>
       </div>
 
-      {/* side nav bar for mobile view */}
+      {/* side nav bar for mobile view .....................................................................*/}
       <div
         onClick={() => {
           setViewSideNav(!viewSideNav);
@@ -392,7 +394,7 @@ const NavBar = ({ navBar2, showCase1Page }) => {
         } bg-white  left-0 w-96 p-5 px-10 max-sm:px-5 max-sm:w-80 z-30 transition-all font-medium`}
       >
         <div id="header" className="flex justify-between items-center">
-          <img className="w-36" src="/Homyz-logo2.png" alt="Homyz-logo2" />
+          <img className="w-28" src="/colliers.jpg" alt="colliers" />
           <div
             onClick={() => {
               setViewSideNav(!viewSideNav);

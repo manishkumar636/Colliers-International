@@ -29,22 +29,23 @@ export default function Carousel() {
         className="mySwiper text-xl"
       >
         <SwiperSlide>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit neque
-          natus asperiores unde, nulla sequi, nobis saepe dicta aut maiores quia
-          quos sapiente dolores consequuntur perspiciatis repellendus quis
-          necessitatibus quas.
+          At Colliers, our experts are committed to helping clients navigate the
+          complexities of real estate. Whether you’re buying, selling, leasing,
+          or investing, our team provides tailored solutions to meet your unique
+          needs. We combine local market knowledge with global insights to
+          ensure your goals are achieved efficiently and effectively.
         </SwiperSlide>
         <SwiperSlide>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit neque
-          natus asperiores unde, nulla sequi, nobis saepe dicta aut maiores quia
-          quos sapiente dolores consequuntur perspiciatis repellendus quis
-          necessitatibus quas.
+          Colliers embraces innovation to deliver smarter real estate
+          strategies. From leveraging cutting-edge technology to providing
+          data-driven insights, we empower our clients to make informed
+          decisions. This forward-thinking approach helps businesses and
+          individuals maximize the value of their real estate investments.
         </SwiperSlide>
         <SwiperSlide>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit neque
-          natus asperiores unde, nulla sequi, nobis saepe dicta aut maiores quia
-          quos sapiente dolores consequuntur perspiciatis repellendus quis
-          necessitatibus quas.
+          At Colliers, we believe in shaping the future responsibly. We are
+          dedicated to sustainable practices that not only benefit the
+          environment but also add long-term value to your property.
         </SwiperSlide>
 
         <div className="slider-controler flex max-md:justify-center  gap-3  mt-16">

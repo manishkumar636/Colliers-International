@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./exculusiveCard.css";
 import Button from "../buttons-component/solidbutton";
 import { Link } from "react-router-dom";
