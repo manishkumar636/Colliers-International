@@ -15,6 +15,8 @@ import Popular from "../components/featured-&-popluar-page-component/popluar";
 import Contact from "./contact";
 import Results from "./results";
 import { Fragment } from "react";
+import TermsAndConditions from "../components/Terms/termsconditions";
+import PrivacyPolicy from "../components/Privacy/privacy";
 
 const router = createBrowserRouter([
   {
@@ -135,6 +137,26 @@ const router = createBrowserRouter([
         <NavBar />
         <Contact />
         <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/termsandconditions",
+    element: (
+      <>
+        {" "}
+        <NavBar />
+        <TermsAndConditions />
+      </>
+    ),
+  },
+  {
+    path: "/privacypolicy",
+    element: (
+      <>
+        {" "}
+        <NavBar />
+        <PrivacyPolicy />
       </>
     ),
   },

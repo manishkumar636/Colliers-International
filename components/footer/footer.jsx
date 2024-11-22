@@ -158,7 +158,7 @@ const Footer = () => {
                 <FaTwitter />
               </Link>
             </div> */}
-            <ul className="text-white text-lg flex justify-start items-center flex-wrap gap-x-8 gap-y-4">
+            <ul className="text-white text-lg flex justify-start items-center flex-wrap gap-x-8 gap-y-1">
               <Link
                 onClick={scrollToTop}
                 className="hover:text-red-500 transition-all"
@@ -188,6 +188,14 @@ const Footer = () => {
                 Contact Us
               </Link>
             </ul>
+          </div>
+          <div className="flex gap-7">
+            <Link to={"/termsandconditions"}>
+              <p style={{ color: "#696969" }}>Terms and conditions </p>
+            </Link>
+            <Link to={"/privacypolicy"}>
+              <p style={{ color: "#696969" }}>Privacy Policy </p>
+            </Link>
           </div>
           <p style={{ color: "#696969" }}>
             © Colliers. All Rights Reserved 2023.
